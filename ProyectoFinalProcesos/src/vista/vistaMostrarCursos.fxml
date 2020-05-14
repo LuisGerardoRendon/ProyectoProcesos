@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controlador.VistaMostrarCursosController">
+   <children>
+      <Label fx:id="labelMostrarCursos" layoutX="260.0" layoutY="24.0" text="Mostrar Cursos" />
+      <RadioButton fx:id="radioBotonTodos" layoutX="42.0" layoutY="61.0" mnemonicParsing="false" text="Todos" />
+      <RadioButton fx:id="radioBotonDisponibles" layoutX="157.0" layoutY="61.0" mnemonicParsing="false" text="Disponibles para Inscripción" />
+      <RadioButton fx:id="radioBotonCursando" layoutX="374.0" layoutY="61.0" mnemonicParsing="false" text="Cursando" />
+      <RadioButton fx:id="radioBotonConcluido" layoutX="486.0" layoutY="61.0" mnemonicParsing="false" text="Concluido" />
+      <TableView fx:id="tablaCursos" layoutX="200.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="comlumnaCursos" prefWidth="199.20001220703125" text="CURSOS" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonInformacionCurso" layoutX="235.0" layoutY="336.0" mnemonicParsing="false" onAction="#informacionCurso" text="Información de Curso" />
+   </children>
+</AnchorPane>
