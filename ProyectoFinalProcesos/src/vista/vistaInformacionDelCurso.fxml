@@ -6,8 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controlador.VistaInformacionDelCursoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaInformacionDelCursoController">
    <children>
       <Label fx:id="nrcLabel" layoutX="67.0" layoutY="71.0" text="NRC:" />
       <Label fx:id="nombreLabel" layoutX="66.0" layoutY="99.0" text="nombre:" />
@@ -21,11 +20,13 @@
       <Label fx:id="setCreditosLabel" layoutX="187.0" layoutY="175.0" text="setCreditos" />
       <Label fx:id="setFechaInicioLabel" layoutX="187.0" layoutY="208.0" text="setFechaDeInicio" />
       <Label fx:id="setFechaFinLanel" layoutX="187.0" layoutY="250.0" text="setFechaFin" />
-      <TableView fx:id="tablaClientes" layoutX="313.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tablaClientes" layoutX="313.0" layoutY="68.0" prefHeight="237.0" prefWidth="200.0">
         <columns>
           <TableColumn fx:id="columnaClientes" prefWidth="199.20001220703125" text="Clientes Registrados" />
         </columns>
       </TableView>
-      <Button fx:id="botonAceptar" layoutX="274.0" layoutY="308.0" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+      <Button fx:id="botonAceptar" layoutX="455.0" layoutY="340.0" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+      <Label fx:id="labelCategoria" layoutX="63.0" layoutY="291.0" text="Categoría:" />
+      <Label fx:id="setCategoriaLabel" layoutX="187.0" layoutY="291.0" text="setCategoria" />
    </children>
 </AnchorPane>

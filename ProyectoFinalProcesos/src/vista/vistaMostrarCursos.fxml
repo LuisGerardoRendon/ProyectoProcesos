@@ -7,19 +7,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controlador.VistaMostrarCursosController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaMostrarCursosController">
    <children>
-      <Label fx:id="labelMostrarCursos" layoutX="260.0" layoutY="24.0" text="Mostrar Cursos" />
-      <RadioButton fx:id="radioBotonTodos" layoutX="42.0" layoutY="61.0" mnemonicParsing="false" text="Todos" />
-      <RadioButton fx:id="radioBotonDisponibles" layoutX="157.0" layoutY="61.0" mnemonicParsing="false" text="Disponibles para Inscripción" />
-      <RadioButton fx:id="radioBotonCursando" layoutX="374.0" layoutY="61.0" mnemonicParsing="false" text="Cursando" />
-      <RadioButton fx:id="radioBotonConcluido" layoutX="486.0" layoutY="61.0" mnemonicParsing="false" text="Concluido" />
-      <TableView fx:id="tablaCursos" layoutX="200.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0">
+      <Label fx:id="labelMostrarCursos" layoutX="260.0" layoutY="14.0" text="Mostrar Cursos" />
+      <RadioButton fx:id="radioBotonTodos" layoutX="300.0" layoutY="43.0" mnemonicParsing="false" text="Todos" />
+      <RadioButton fx:id="radioBotonDisponibles" layoutX="300.0" layoutY="68.0" mnemonicParsing="false" text="Disponibles para Inscripción" />
+      <RadioButton fx:id="radioBotonCursando" layoutX="300.0" layoutY="91.0" mnemonicParsing="false" text="Cursando" />
+      <RadioButton fx:id="radioBotonConcluido" layoutX="300.0" layoutY="115.0" mnemonicParsing="false" text="Concluido" />
+      <TableView fx:id="tablaCursos" layoutX="32.0" layoutY="43.0" prefHeight="307.0" prefWidth="242.0">
         <columns>
-          <TableColumn fx:id="comlumnaCursos" prefWidth="199.20001220703125" text="CURSOS" />
+          <TableColumn fx:id="comlumnaCursos" prefWidth="241.60000076293946" text="CURSOS" />
         </columns>
       </TableView>
-      <Button fx:id="botonInformacionCurso" layoutX="235.0" layoutY="336.0" mnemonicParsing="false" onAction="#informacionCurso" text="Información de Curso" />
+      <Button fx:id="botonInformacionCurso" layoutX="88.0" layoutY="360.0" mnemonicParsing="false" onAction="#informacionCurso" text="Información de Curso" />
+      <Button fx:id="botonRegistrarCurso" layoutX="300.0" layoutY="184.0" mnemonicParsing="false" onAction="#registrarCurso" prefHeight="26.0" prefWidth="130.0" text="Registrar Curso" />
+      <Button fx:id="botonMostrarCursos" layoutX="300.0" layoutY="143.0" mnemonicParsing="false" onAction="#mostrarCursos" prefHeight="26.0" prefWidth="130.0" text="Mostrar Cursos" />
    </children>
 </AnchorPane>

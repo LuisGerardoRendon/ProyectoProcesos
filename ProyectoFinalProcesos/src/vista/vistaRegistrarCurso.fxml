@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controlador.VistaRegistrarCursoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaRegistrarCursoController">
    <children>
-      <Label fx:id="labelNombre" layoutX="164.0" layoutY="92.0" text="Nombre:" />
-      <Label fx:id="labelCupo" layoutX="164.0" layoutY="129.0" text="Cupo:" />
-      <Label fx:id="labelCreditos" layoutX="164.0" layoutY="164.0" text="Créditos:" />
-      <Label fx:id="labelFechaInicio" layoutX="164.0" layoutY="198.0" text="Fecha de inicio:" />
-      <Label fx:id="labelFechaFin" layoutX="166.0" layoutY="236.0" text="Fecha de fin:" />
-      <TextField fx:id="textfieldNombre" layoutX="288.0" layoutY="88.0" />
-      <TextField fx:id="textfieldCupo" layoutX="288.0" layoutY="125.0" />
-      <TextField fx:id="textfieldCreditos" layoutX="288.0" layoutY="160.0" />
-      <TextField fx:id="textfieldFechaInicio" layoutX="288.0" layoutY="194.0" />
-      <TextField fx:id="textfieldFechaFin" layoutX="288.0" layoutY="232.0" />
+      <Label fx:id="labelNombre" layoutX="173.0" layoutY="62.0" text="Nombre:" />
+      <Label fx:id="labelCupo" layoutX="189.0" layoutY="99.0" text="Cupo:" />
+      <Label fx:id="labelCreditos" layoutX="173.0" layoutY="134.0" text="Créditos:" />
+      <Label fx:id="labelFechaInicio" layoutX="142.0" layoutY="168.0" text="Fecha de inicio:" />
+      <Label fx:id="labelFechaFin" layoutX="155.0" layoutY="221.0" text="Fecha de fin:" />
+      <TextField fx:id="textfieldNombre" layoutX="265.0" layoutY="58.0" prefHeight="26.0" prefWidth="255.0" />
+      <TextField fx:id="textfieldCupo" layoutX="266.0" layoutY="95.0" prefHeight="26.0" prefWidth="255.0" />
+      <TextField fx:id="textfieldCreditos" layoutX="266.0" layoutY="130.0" prefHeight="26.0" prefWidth="255.0" />
+      <TextField fx:id="textfieldDiaInicio" layoutX="266.0" layoutY="164.0" prefHeight="26.0" prefWidth="47.0" />
       <Button fx:id="botonRegistrar" layoutX="487.0" layoutY="335.0" mnemonicParsing="false" onAction="#registrar" text="Registrar" />
       <Button fx:id="botonCancelar" layoutX="48.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Label layoutX="259.0" layoutY="14.0" text="Registrar Curso" />
+      <Label fx:id="labelCategoria" layoutX="162.0" layoutY="273.0" text="Categoría:" />
+      <ComboBox fx:id="comboBoxCategoria" layoutX="266.0" layoutY="269.0" prefHeight="26.0" prefWidth="255.0" />
+      <ComboBox fx:id="comboAnioInicio" layoutX="426.0" layoutY="163.0" prefHeight="26.0" prefWidth="96.0" />
+      <ComboBox fx:id="comboMesInicio" layoutX="324.0" layoutY="164.0" prefHeight="26.0" prefWidth="96.0" />
+      <Label layoutX="281.0" layoutY="196.0" text="Día" />
+      <Label layoutX="361.0" layoutY="196.0" text="Mes" />
+      <Label layoutX="463.0" layoutY="196.0" text="Año" />
+      <TextField fx:id="textfieldDiaFin" layoutX="266.0" layoutY="217.0" prefHeight="26.0" prefWidth="47.0" />
+      <ComboBox fx:id="comboAnioFin" layoutX="426.0" layoutY="217.0" prefHeight="26.0" prefWidth="96.0" />
+      <ComboBox fx:id="comboMesFin" layoutX="324.0" layoutY="217.0" prefHeight="26.0" prefWidth="96.0" />
+      <Label layoutX="281.0" layoutY="249.0" text="Día" />
+      <Label layoutX="361.0" layoutY="249.0" text="Mes" />
+      <Label layoutX="463.0" layoutY="249.0" text="Año" />
    </children>
 </AnchorPane>

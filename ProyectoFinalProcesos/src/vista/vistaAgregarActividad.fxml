@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="513.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controlador.VistaAgregarActividadController">
+   <children>
+      <Label layoutX="87.0" layoutY="74.0" text="Nombre:" />
+      <Label layoutX="87.0" layoutY="108.0" text="Fecha de cierre:" />
+      <Label layoutX="87.0" layoutY="144.0" text="Archivo Adjunto (Opcional):" />
+      <TextField layoutX="251.0" layoutY="70.0" />
+      <TextField layoutX="251.0" layoutY="104.0" />
+      <Button layoutX="251.0" layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Seleccionar Archivo" />
+      <Label layoutX="87.0" layoutY="188.0" text="Nombre del archivo cargado:" />
+      <Label layoutX="251.0" layoutY="188.0" text="setNombre" />
+      <Label layoutX="193.0" layoutY="14.0" text="Agregar Actividad" />
+      <Button layoutX="382.0" layoutY="220.0" mnemonicParsing="false" text="Registrar Actividad" />
+      <Button layoutX="35.0" layoutY="220.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+</AnchorPane>
